@@ -10,15 +10,15 @@ import 'package:hungry/views/widgets/step_tile.dart';
 
 class RecipeDetailPage extends StatefulWidget {
   final Recipe data;
-  RecipeDetailPage({@required this.data});
+  RecipeDetailPage({required this.data});
 
   @override
   _RecipeDetailPageState createState() => _RecipeDetailPageState();
 }
 
 class _RecipeDetailPageState extends State<RecipeDetailPage> with TickerProviderStateMixin {
-  TabController _tabController;
-  ScrollController _scrollController;
+ late TabController _tabController;
+ late ScrollController _scrollController;
 
   @override
   void initState() {
@@ -71,7 +71,6 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> with TickerProvider
           duration: Duration(milliseconds: 200),
           child: AppBar(
             backgroundColor: Colors.transparent,
-            brightness: Brightness.dark,
             elevation: 0,
             centerTitle: true,
             title: Text('Search Recipe', style: TextStyle(fontFamily: 'inter', fontWeight: FontWeight.w400, fontSize: 16)),
@@ -83,7 +82,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> with TickerProvider
             ),
             actions: [
               IconButton(onPressed: () {}, icon: SvgPicture.asset('assets/icons/bookmark.svg', color: Colors.white)),
-            ],
+            ], systemOverlayStyle: SystemUiOverlayStyle.light,
           ),
         ),
       ),
@@ -120,7 +119,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> with TickerProvider
                               },
                               child: Text('cancel'),
                               style: TextButton.styleFrom(
-                                primary: Colors.grey[600],
+                                foregroundColor: Colors.grey[600],
                               ),
                             ),
                           ),
@@ -130,7 +129,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> with TickerProvider
                                 onPressed: () {},
                                 child: Text('Post Review'),
                                 style: ElevatedButton.styleFrom(
-                                  primary: AppColor.primary,
+                                  backgroundColor: AppColor.primary,
                                 ),
                               ),
                             ),

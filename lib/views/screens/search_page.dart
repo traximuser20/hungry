@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hungry/models/core/recipe.dart';
 import 'package:hungry/models/helper/recipe_helper.dart';
@@ -20,7 +21,6 @@ class _SearchPageState extends State<SearchPage> {
     print(searchInputController.text.isEmpty);
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.dark,
         backgroundColor: AppColor.primary,
         elevation: 0,
         centerTitle: true,
@@ -30,7 +30,7 @@ class _SearchPageState extends State<SearchPage> {
           onPressed: () {
             Navigator.of(context).pop();
           },
-        ),
+        ), systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: ListView(
         shrinkWrap: true,

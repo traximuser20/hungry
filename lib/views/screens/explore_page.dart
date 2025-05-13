@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hungry/models/core/recipe.dart';
 import 'package:hungry/models/helper/recipe_helper.dart';
@@ -19,7 +20,6 @@ class ExplorePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.primary,
-        brightness: Brightness.dark,
         elevation: 0,
         centerTitle: false,
         title: Text('Explore Recipe', style: TextStyle(fontFamily: 'inter', fontWeight: FontWeight.w400, fontSize: 16)),
@@ -31,7 +31,7 @@ class ExplorePage extends StatelessWidget {
             },
             icon: SvgPicture.asset('assets/icons/search.svg', color: Colors.white),
           ),
-        ],
+        ], systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: ListView(
         shrinkWrap: true,

@@ -7,7 +7,7 @@ import 'package:hungry/views/screens/recipe_detail_page.dart';
 
 class FeaturedRecipeCard extends StatelessWidget {
   final Recipe data;
-  FeaturedRecipeCard({@required this.data});
+  FeaturedRecipeCard({required this.data});
 
   @override
   Widget build(BuildContext context) {

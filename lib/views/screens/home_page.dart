@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                               Navigator.of(context).push(MaterialPageRoute(builder: (context) => DeliciousTodayPage()));
                             },
                             child: Text('see all'),
-                            style: TextButton.styleFrom(primary: Colors.white, textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14)),
+                            style: TextButton.styleFrom(foregroundColor: Colors.white, textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14)),
                           ),
                         ],
                       ),
@@ -152,7 +152,7 @@ class HomePage extends StatelessWidget {
                         Navigator.of(context).push(MaterialPageRoute(builder: (context) => NewlyPostedPage()));
                       },
                       child: Text('see all'),
-                      style: TextButton.styleFrom(primary: Colors.black, textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14)),
+                      style: TextButton.styleFrom(foregroundColor: Colors.black, textStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 14)),
                     ),
                   ],
                 ),

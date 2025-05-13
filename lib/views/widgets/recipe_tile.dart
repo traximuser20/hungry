@@ -6,7 +6,7 @@ import 'package:hungry/views/utils/AppColor.dart';
 
 class RecipeTile extends StatelessWidget {
   final Recipe data;
-  RecipeTile({@required this.data});
+  RecipeTile({required this.data});
 
   @override
   Widget build(BuildContext context) {

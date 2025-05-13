@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hungry/models/core/recipe.dart';
 import 'package:hungry/models/helper/recipe_helper.dart';
 import 'package:hungry/views/utils/AppColor.dart';
@@ -11,7 +12,6 @@ class NewlyPostedPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.dark,
         backgroundColor: AppColor.primary,
         centerTitle: true,
         elevation: 0,
@@ -21,7 +21,7 @@ class NewlyPostedPage extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-        ),
+        ), systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: ListView.separated(
         padding: EdgeInsets.all(16),

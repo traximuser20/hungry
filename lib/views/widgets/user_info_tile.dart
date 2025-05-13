@@ -5,7 +5,7 @@ class UserInfoTile extends StatelessWidget {
   final String label, value;
   final EdgeInsetsGeometry margin, padding;
   final Color valueBackground;
-  UserInfoTile({@required this.label, @required this.value, this.padding, this.margin, this.valueBackground});
+  UserInfoTile({required this.label, required this.value, required this.padding, required this.margin, required this.valueBackground});
 
   @override
   Widget build(BuildContext context) {

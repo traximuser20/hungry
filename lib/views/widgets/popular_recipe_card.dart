@@ -9,7 +9,7 @@ import 'package:hungry/views/utils/AppColor.dart';
 class PopularRecipeCard extends StatelessWidget {
   final Recipe data;
 
-  PopularRecipeCard({@required this.data});
+  PopularRecipeCard({required this.data});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

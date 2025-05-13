@@ -58,8 +58,7 @@ class WelcomePage extends StatelessWidget {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                            primary: AppColor.primarySoft,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)), backgroundColor: AppColor.primarySoft,
                           ),
                         ),
                       ),
@@ -82,9 +81,8 @@ class WelcomePage extends StatelessWidget {
                             );
                           },
                           style: OutlinedButton.styleFrom(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                            foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                             side: BorderSide(color: AppColor.secondary.withOpacity(0.5), width: 1),
-                            primary: Colors.white,
                           ),
                         ),
                       ),

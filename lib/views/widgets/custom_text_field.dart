@@ -10,12 +10,12 @@ class CustomTextField extends StatelessWidget {
   final EdgeInsetsGeometry margin;
 
   CustomTextField({
-    @required this.title,
-    @required this.hint,
-    this.controller,
+    required this.title,
+    required this.hint,
+    required this.controller,
     this.obsecureText = false,
-    this.padding,
-    this.margin,
+    required this.padding,
+    required this.margin,
   });
 
   @override

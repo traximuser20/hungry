@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class FullScreenImage extends StatelessWidget {
   final Widget image;
-  FullScreenImage({@required this.image});
+  FullScreenImage({required this.image});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        brightness: Brightness.dark,
         backgroundColor: Colors.black,
         elevation: 0,
         leading: IconButton(
@@ -17,7 +17,7 @@ class FullScreenImage extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-        ),
+        ), systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,

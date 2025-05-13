@@ -5,7 +5,7 @@ import 'package:hungry/views/screens/recipe_detail_page.dart';
 
 class RecommendationRecipeCard extends StatelessWidget {
   final Recipe data;
-  RecommendationRecipeCard({@required this.data});
+  RecommendationRecipeCard({required this.data});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

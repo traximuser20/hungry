@@ -37,10 +37,36 @@ class RegisterModal extends StatelessWidget {
                 ),
               ),
               // Form
-              CustomTextField(title: 'Email', hint: 'youremail@email.com'),
-              CustomTextField(title: 'Full Name', hint: 'Your Full Name', margin: EdgeInsets.only(top: 16)),
-              CustomTextField(title: 'Password', hint: '**********', obsecureText: true, margin: EdgeInsets.only(top: 16)),
-              CustomTextField(title: 'Retype Password', hint: '**********', obsecureText: true, margin: EdgeInsets.only(top: 16)),
+              CustomTextField(
+                title: 'Email',
+                hint: 'youremail@email.com',
+                controller: TextEditingController(),
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.zero,
+              ),
+              CustomTextField(
+                title: 'Full Name',
+                hint: 'Your Full Name',
+                controller: TextEditingController(),
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.only(top: 16),
+              ),
+              CustomTextField(
+                title: 'Password',
+                hint: '**********',
+                obsecureText: true,
+                controller: TextEditingController(),
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.only(top: 16),
+              ),
+              CustomTextField(
+                title: 'Retype Password',
+                hint: '**********',
+                obsecureText: true,
+                controller: TextEditingController(),
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.only(top: 16),
+              ),
               // Register Button
               Container(
                 margin: EdgeInsets.only(top: 32, bottom: 6),
@@ -54,7 +80,7 @@ class RegisterModal extends StatelessWidget {
                   child: Text('Register', style: TextStyle(color: AppColor.secondary, fontSize: 16, fontWeight: FontWeight.w600, fontFamily: 'inter')),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                    primary: AppColor.primarySoft,
+                    backgroundColor: AppColor.primarySoft,
                   ),
                 ),
               ),
@@ -73,7 +99,7 @@ class RegisterModal extends StatelessWidget {
                   );
                 },
                 style: TextButton.styleFrom(
-                  primary: Colors.white,
+                  foregroundColor: Colors.white,
                 ),
                 child: RichText(
                   text: TextSpan(

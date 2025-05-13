@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hungry/views/utils/AppColor.dart';
 
 class DummySearchBar extends StatelessWidget {
-  final Function routeTo;
-  DummySearchBar({@required this.routeTo});
+  final VoidCallback routeTo;
+  DummySearchBar({required this.routeTo});
 
   @override
   Widget build(BuildContext context) {

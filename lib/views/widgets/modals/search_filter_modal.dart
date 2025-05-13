@@ -50,7 +50,7 @@ class SearchFilterModal extends StatelessWidget {
         ),
         // Sort By Option
         Container(
-          decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[300]))),
+          decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[300] ?? Colors.grey))),
           child: ListTileTheme(
             selectedColor: AppColor.primary,
             textColor: Colors.grey,
@@ -63,7 +63,7 @@ class SearchFilterModal extends StatelessWidget {
         ),
         // Sort By Option
         Container(
-          decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[300]))),
+          decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[300] ?? Colors.grey))),
           child: ListTileTheme(
             selectedColor: AppColor.primary,
             textColor: Colors.grey,
@@ -76,7 +76,7 @@ class SearchFilterModal extends StatelessWidget {
         ),
         // Sort By Option
         Container(
-          decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[300]))),
+          decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.grey[300] ?? Colors.grey))),
           child: ListTileTheme(
             selectedColor: AppColor.primary,
             textColor: Colors.grey,
